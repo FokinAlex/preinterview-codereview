@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans default-lazy-init="true">
+
+    <bean id="firstSpecificPermissionHandler" class="permission.CustomPermission">
+        <constructor-arg>
+            <list>
+                <value>firstSpecialistRole</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="secondSpecificPermissionHandler" class="permission.CustomPermission">
+        <constructor-arg>
+            <list>
+                <value>secondSpecialistRole</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="thirdSpecificPermissionHandler" class="permission.CustomPermission">
+        <constructor-arg>
+            <list>
+                <value>firstSpecialistRole</value>
+                <value>secondSpecialistRole</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="fourthSpecificPermissionHandler" class="permission.CustomPermission" />
+</beans>

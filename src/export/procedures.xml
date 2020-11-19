@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<procedure>
+    <description>Procedures description</description>
+    <debug>DEBUG</debug>
+    <module>
+        <beans>procedure-beans.xml</beans>
+    </module>
+
+    <docproc id="CsvExportProc"
+             object="CsvExportProc"
+             desc="Export specific documents into .csv file" >
+        <param name="targetDir"       type="string" desc="Export directory" />
+        <param name="emptyFieldValue" type="string" desc="Empty field value" />
+    </docproc>
+</procedure>
